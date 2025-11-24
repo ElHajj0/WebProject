@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <title>Checkout</title>
+</head>
+<body>
+    <section class="header-container">
+        <header>
+        <img src="logo.png" alt="">
+        <div class="navig">
+          <a href="Homepage.html">Home</a>
+          <a href="product.html">Products</a>
+          <a href=".html">Checkout</a>
+          <a href="cart.html">Cart</a>
+          <a href="search.html">Search</a>
+
+
+        </div>
+        <div class="hamburger" onclick="toggleMenue()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        </header>
+      <nav id="navMenu">
+        <div class="small-navig">
+          <a href="Homepage.html">Home</a>
+          <a href="product.html">Products</a>
+          <a href="checkout.html">Checkout</a>
+        </div>   
+      </nav>
+    </section>
+    
+
+    <div class="header-spacer-checkout"></div>
+    
+    <main class="checkout-main">
+  <div class="checkout-container">
+    <div class="checkout-left">
+      <h2>Checkout Details</h2>
+      <div id="checkout-summary"></div>
+      <div class="checkout-total">
+        <strong>Total:</strong> $<span id="checkout-total">0.00</span>
+      </div>
+    </div>
+
+    <div class="checkout-right">
+      <h2>Payment Information</h2>
+      <form id="checkout-form">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Mohammad Hajj" required>
+
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone" placeholder="+961 12 345 678" required>
+
+        <label for="location">Address</label>
+        <input type="text" id="location" name="location" placeholder="Street, City, Country" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="email@example.com" required>
+
+        <label for="wallet">Payment Method</label>
+        <select id="wallet" name="wallet" required>
+          <option value="Credit Card">Credit Card</option>
+          <option value="PayPal">PayPal</option>
+          <option value="Google Pay">Google Pay</option>
+          <option value="Apple Pay">Apple Pay</option>
+        </select>
+
+        <button type="submit" class="submit-btn">Complete Payment</button>
+      </form>
+    </div>
+  </div>
+</main>
+
+
+
+
+    <footer>
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>Customer Service</h3>
+      <a href="#">Contact Us</a>
+      <a href="#">About Us</a>
+      <a href="#">Our Team</a>
+    </div>
+
+    <div class="footer-section">
+      <h3>About Us</h3>
+      <a href="#">Our Company</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Use</a>
+    </div>
+
+    <div class="footer-section newsletter">
+      <h3>Stay Updated with the Latest Releases and Offers</h3>
+      <div class="newsletter-box">
+        <input type="email" placeholder="Email address">
+        <button><i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+
+      <div class="social-icons">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-instagram"></i>
+      </div>
+    </div>
+  </div>
+    <p>© 2025 BookVerse. All rights reserved.</p>
+</footer>
+
+
+
+</body>
+</html>

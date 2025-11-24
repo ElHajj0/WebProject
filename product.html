@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="products.js" defer></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/x-icon" href="logo.png">
+
+
+    <title>Product</title>
+</head>
+<body>
+    
+    
+
+    <section class="header-container">
+        <header>
+        <img src="logo.png" alt="">
+        <div class="navig">
+          <a href="Homepage.html">Home</a>
+          <a href="product.html">Products</a>
+          <a href="checkout.html">Checkout</a>
+          <a href="cart.html">Cart</a>
+          <a href="search.html">Search</a>
+
+
+        </div>
+        <div class="hamburger" onclick="toggleMenue()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        </header>
+      <nav id="navMenu">
+        <div class="small-navig">
+          <a href="Homepage.html">Home</a>
+
+          <a href=".html">Products</a>
+          <a href=".html">Checkout</a>
+          <a href="cart.html">Cart</a>
+          <a href="search.html">Search</a>
+        </div>   
+      </nav>
+    </section>
+    
+
+    
+    <div class="header-spacer"></div>
+    <div class="header-spacer"></div>
+
+    <div id="product-list"></div>
+
+
+    <!-- div class="title-bar" >
+        <div class="title">Classic Literature</div>
+    </div>
+    <div class="book-container">
+        <div class="book-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/The_Great_Gatsby_Cover_1925_Retouched.jpg" alt="The Great Gatsby Cover" class="book-image">
+            <div class="book-title">The Great Gatsby</div>
+            <div class="book-author">F. Scott Fitzgerald</div>
+            <div class="book-price">$9.99</div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="book-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/To_Kill_a_Mockingbird_%28first_edition_cover%29.jpg" alt="To Kill a Mockingbird Cover" class="book-image">
+            <div class="book-title">To Kill a Mockingbird</div>
+            <div class="book-author">Harper Lee</div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="book-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/1984first.jpg" alt="1984 Cover" class="book-image">
+            <div class="book-title">1984</div>
+            <div class="book-author">George Orwell</div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="book-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/17/PrideAndPrejudiceTitlePage.jpg" alt="Pride and Prejudice Cover" class="book-image">
+            <div class="book-title">Pride and Prejudice</div>
+            <div class="book-author">Jane Austen</div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="book-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/The_Catcher_in_the_Rye_%281951%2C_first_edition_cover%29.jpg" alt="The Catcher in the Rye Cover" class="book-image">
+            <div class="book-title">The Catcher in the Rye</div>
+            <div class="book-author">J.D. Salinger</div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="title-bar">
+        <div class="title">Historical Fiction</div>
+    </div>
+    <div class="book-container">
+        <div class="book-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/The_Great_Gatsby_Cover_1925_Retouched.jpg" alt="The Great Gatsby Cover" class="book-image">
+            <div class="book-title">The Great Gatsby</div>
+            <div class="book-author">F. Scott Fitzgerald</div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="book-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/To_Kill_a_Mockingbird_%28first_edition_cover%29.jpg" alt="To Kill a Mockingbird Cover" class="book-image">
+            <div class="book-title">To Kill a Mockingbird</div>
+            <div class="book-author">Harper Lee</div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="book-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/1984first.jpg" alt="1984 Cover" class="book-image">
+            <div class="book-title">1984</div>
+            <div class="book-author">George Orwell</div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="book-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/17/PrideAndPrejudiceTitlePage.jpg" alt="Pride and Prejudice Cover" class="book-image">
+            <div class="book-title">Pride and Prejudice</div>
+            <div class="book-author">Jane Austen</div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="book-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/The_Catcher_in_the_Rye_%281951%2C_first_edition_cover%29.jpg" alt="The Catcher in the Rye Cover" class="book-image">
+            <div class="book-title">The Catcher in the Rye</div>
+            <div class="book-author">J.D. Salinger</div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+-->
+
+    
+
+<section class="category-bar">
+  <div class="category-label">Browse by<br>Category</div>
+  <div class="category-links">
+    <a href="#" data-category="Classic Literature">Classic Literature</a>
+    <span>|</span>
+    <a href="#" data-category="Historical Fiction">Historical Fiction</a>
+    <span>|</span>
+    <a href="#" data-category="Dystopian Fiction">Dystopian Fiction</a>
+    <span>|</span>
+    <a href="#" data-category="Coming-of-Age">Coming-of-Age</a>
+    <span>|</span>
+    <a href="#" data-category="Environment">Environment</a>
+  </div>
+</section>
+
+
+  
+</section>
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>Customer Service</h3>
+      <a href="#">Contact Us</a>
+      <a href="#">About Us</a>
+      <a href="#">Our Team</a>
+    </div>
+
+    <div class="footer-section">
+      <h3>About Us</h3>
+      <a href="#">Our Company</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Use</a>
+    </div>
+
+    <div class="footer-section newsletter">
+      <h3>Stay Updated with the Latest Releases and Offers</h3>
+      <div class="newsletter-box">
+        <input type="email" placeholder="Email address">
+        <button><i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+
+      <div class="social-icons">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-instagram"></i>
+      </div>
+    </div>
+  </div>
+    <p>© 2025 BookVerse. All rights reserved.</p>
+</footer>
+
+
+
+
+</body>
+</html>
